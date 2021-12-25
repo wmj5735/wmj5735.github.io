@@ -1,33 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>自序</title>
-    <url>/2021/12/25/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%AE%9E%E9%AA%8C/</url>
-    <content><![CDATA[<center>**自序**</center>
-
-<center>**我一生啊，只是费点儿笔墨。**</center>
-
-<p>而且，</p>
-<p>这样的路啊，也已经走了好久。</p>
-<p>我要写下踩过的泥土，</p>
-<p>要记上淋过的小雨，</p>
-<p>忘不了山水旁蹁跹的燕子，</p>
-<p>还有秋天冬天的风，</p>
-<p>和布谷鸟的不如归去。</p>
-<p>我在想，什么时候我走不了了。</p>
-<p>边想边走，</p>
-<p>走着走着，</p>
-<p>这样的路，我又走了好久。</p>
-<p>每次的旅途，我都背着书香。</p>
-<p>心里来了又去多少个希望。</p>
-<p>熬过多少个昏黄。</p>
-<p>到如今，回头想，</p>
-<p>终于是，</p>
-<p>一转一个山头，</p>
-<p>一眼一个春秋。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2021/12/24/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -43,6 +16,53 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>自序</title>
+    <url>/2021/12/25/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%AE%9E%E9%AA%8C/</url>
+    <content><![CDATA[<center>自序</center>
+
+
+
+<center>我一生啊，只是费点儿笔墨。</center>
+
+<center>而且，
+
+<center>这样的路啊，也已经走了好久。
+
+<center>我要写下踩过的泥土，
+
+<center>要记上淋过的小雨，
+
+<center>忘不了山水旁蹁跹的燕子，
+
+<center>还有秋天冬天的风，
+
+<center>和布谷鸟的不如归去。
+
+<center>我在想，什么时候我走不了了。
+
+<center>边想边走，
+
+<center>走着走着，
+
+<center>这样的路，我又走了好久。
+
+<center>每次的旅途，我都背着书香。
+
+<center>心里来了又去多少个希望。
+
+<center>熬过多少个昏黄。
+
+<center>到如今，回头想，
+
+<center>终于是，
+
+<center>一转一个山头，
+
+<center>一眼一个春秋。
+
 ]]></content>
   </entry>
 </search>
