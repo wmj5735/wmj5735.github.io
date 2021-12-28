@@ -117,7 +117,7 @@
         
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/12/25/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%AE%9E%E9%AA%8C/" data-id="ckxpdyymz0001esvf409c3twc" class="article-share-link">
+      <a data-url="http://example.com/2021/12/25/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%AE%9E%E9%AA%8C/" data-id="ckxpev93w0001g0vf431ecfvs" class="article-share-link">
         Share
       </a>
       
@@ -130,46 +130,26 @@
   
 
   
-	
-	
-	
-  <div class="comment_headling"  style="margin-top:5rem;">
-	<font size="5"><i class="fe fe-comments"></i> 评论</font>
-  </div>
-  <div class="comment"></div>
   
-<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<div class="vcomments" id="vcomments"></div>
 
-  
-<script src="/js/Valine.min.js"></script>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
 
-  <script type="text/javascript">
-  // https://cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js
-  GUEST_INFO = ["nick", "mail", "link"],
-  guest_info = "nick,mail,link".split(",").filter(function(i) {
-		return - 1 < GUEST_INFO.indexOf(i)
-  });
-  guest_info = 0 == guest_info.length ? GUEST_INFO: guest_info,
+<script>
   new Valine({
-	 // AV 对象来自上面引入av-min.js
-	 av: AV, 
-	 el: '.comment',
-	 app_id: 'KpeuInc3QvthchF9kJGlpjtx-MdYXbMMI', 
-	 app_key: '4MSU1GcmqudQGwVEDJnCEcI0', 
-	 placeholder: '请输入...',
-	 meta: guest_info,
-	 notify: false,
-	 verify: false,
-	 avatar: 'monsterid',
-	 recordIP: true,
-	 visitor: ,
-	 lang: 'zh-cn'
-  });
-  </script>
-
+    el: '#vcomments',
+    appId: 'KpeuInc3QvthchF9kJGlpjtx-MdYXbMMI',
+    appKey: '4MSU1GcmqudQGwVEDJnCEcI0',
+    notify: 'false',
+    verify: 'false',
+    avatar: 'monsterid',
+    pageSize: '10',
+    placeholder: '请输入...'
+  })
+</script>
 
   
-
+  
 
 </article>
 </section>
