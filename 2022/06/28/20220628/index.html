@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <meta name="description" content="遥感领域的苦吟诗人">
+  
+  <title>
+    博客文章更新操作 |
+    
+    WMJ Remotesensing workshop
+  </title>
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="WMJ Remotesensing workshop" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="content">
+    <section class="outer">
+  <article id="post-20220628" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h1 class="article-title" itemprop="name">
+  博客文章更新操作
+</h1>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/06/28/20220628/" class="article-date">
+  <time datetime="2022-06-28T06:49:14.000Z" itemprop="datePublished">2022-06-28</time>
+</a>
+      
+    </div>
+    
+
+    
+    
+<div class="tocbot"></div>
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+      
+	      
+		  
+		    <p>博客部署文章的具体操作步骤~</p>
+<p>关于这个网站怎么诞生的，我已经记不清了，自己摸索还是很花时间的。其中包括Github、Hexo、Git、Typora、LeanCloud、主题、图床等等东西，也请教了很多大神，看了很多方法才搭建起来的。现在要还原的话也没那个精力和功夫了，只能把如何更新部署文章先记下来，以便自己后期查看翻阅。</p>
+<h4 id="一、Git创建md文章"><a href="#一、Git创建md文章" class="headerlink" title="一、Git创建md文章"></a><strong>一、Git创建md文章</strong></h4><p>首先在博客文件夹上右键，点击<strong>Git Bash Here</strong>，打开Git命令窗口。</p>
+<img src="https://cdn.jsdelivr.net/gh/wmj5735/ImgHosting/img/20220628_Git Bash Here.png" style="zoom:50%;" />
+
+<p>其次，在命令窗口中输入如下命令，</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hexo new &quot;文章标题&quot;</span><br></pre></td></tr></table></figure>
+
+<p>出现如下提示，即创建成功。接着就可以去提示的文件夹找到20220628这个md文件，打开并创作啦！</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Validating config</span><br><span class="line">INFO  Created: E:\blog\blogname\source\_posts\20220628.md</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/wmj5735/ImgHosting/img/20220628_Git%E7%AA%97%E5%8F%A3.png"></p>
+<h4 id="二、在Typora中写文章"><a href="#二、在Typora中写文章" class="headerlink" title="二、在Typora中写文章"></a><strong>二、在Typora中写文章</strong></h4><p>Typora界面真的很干净，使用体验很不错。但是有一个致命的缺点就是，文章的第一行总是会跳到文章的属性设置代码块里去（至今不知道怎么解决），只能往下回车多另起几行开写了。</p>
+<p>如图，在Typora中，开头灰色部分就是文章的属性块了，在里面可以设置文章的标题（title）、日期（date）、封面（photos）、标签（tags）、是否置顶（top）等等。</p>
+<p>正文则会提供段落标题、高亮显示、下划线、代码块、表格等等，至于图片，Typora自带的本地图片路径速度慢，所以我选择了用图床PicGo来专门存放博客图片，只需拷贝PicGo中图片的路径，复制到Typora中即可显示图片了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wmj5735/ImgHosting/img/20220628_Typora%E7%95%8C%E9%9D%A2.png"></p>
+<p>PicGo界面如下，在上传区上传本地图片，在相册复制图片路径即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wmj5735/ImgHosting/img/20220628_PicGo%E7%95%8C%E9%9D%A2.png"></p>
+<h4 id="三、Git部署上传"><a href="#三、Git部署上传" class="headerlink" title="三、Git部署上传"></a><strong>三、Git部署上传</strong></h4><p>文章写好，保存一下，再打开Git命令窗口，依次输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>​        </p>
+<p>常用Git命令如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面，不会作为文章出现在博文目录。</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&#x27;ctrl + c&#x27;关闭server）</span><br><span class="line">hexo deploy #部署到GitHub</span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line">hexo version  #查看Hexo的版本</span><br></pre></td></tr></table></figure>
+
+<p>好了，整个博客文章的创建到发布记录完了，好记性不如烂笔头，Just GoGoGo!</p>
+
+          
+        
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/06/28/20220628/" data-id="cl4xw26u90002mgvf6ndzcuiz" class="article-share-link">
+        Share
+      </a>
+      
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/" rel="tag">Git</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+<nav class="article-nav">
+  
+  
+  <a href="/2021/12/29/%E9%AB%98%E5%88%86%E4%BA%8C%E5%8F%B7%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" class="article-nav-link">
+    <strong class="article-nav-caption">Older</strong>
+    <div class="article-nav-title">高分二号数据处理</div>
+  </a>
+  
+</nav>
+
+  
+
+  
+  
+<div class="vcomments" id="vcomments"></div>
+
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: 'W7eaC6Trfg53ol56AT27yiQf-9Nh9j0Va',
+    appKey: 'P665J5T393PaUkDVwd1V2Fr7',
+    notify: 'false',
+    verify: 'false',
+    avatar: 'monsterid',
+    pageSize: '10',
+    placeholder: '请输入...'
+  })
+</script>
+
+  
+  
+
+</article>
+</section>
+    <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+  <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+  <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>WMJ Remotesensing workshop &copy; 2022</li>
+      
+        <li></li>
+      
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/hexo.svg" alt="WMJ Remotesensing workshop"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">Home</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">Archives</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">Gallery</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">Tags</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">About</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/copybtn.js"></script>
+
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+  });
+</script>
+
+
+
+<script src="/js/ocean.js"></script>
+
+
+	
+<script src="/js/love.js"></script>
+
+ 
+
+</body>
+
+</html>
